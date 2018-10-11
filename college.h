@@ -1,3 +1,4 @@
+/**@file the name of this file is college.h**/
 //********************
 //Matthew Aberegg
 //Project 3
@@ -18,10 +19,12 @@
 
 class College{
 	public:
+	/**@param s is a string that is input by the user**/
 	College(std::string s);
 	~College();
 	College(const College& other);
 	College& operator =(const College& other);
+	/**@param C is a course that is added and input by the user**/
 	void add(course& c);
 	void remove(std::string coursename);
 	void display(std::ostream& outs);

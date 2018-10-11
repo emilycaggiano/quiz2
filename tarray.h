@@ -1,3 +1,4 @@
+/**@file the name of this file is tarray.h**/
 /*********************************************************************
 	This is a class to introduce you to the syntax of working with 
 	template classes. Notice that the type being stored is completely
@@ -14,11 +15,13 @@ template<class T>
 class Tarray{
     public:
 	// Constructor makes an object with a dynamic array of size 5
+	/**This constructor makes an object with a dynamic array of size 5, @param there are no parameters**/
 	Tarray(); 
 
     	// This function puts the item into the next available spot in the 
 	//array.
 	// If the array is full, resize is called.
+	/**This function puts the item into the next available spot in the array. If the array is full, it will call resize, @return there is nothing returned**/
 	void add(T item);
 
 	// iterator functions

@@ -1,3 +1,4 @@
+/**@file the name of this file is course.h**/
 /***********************************************************************8
 	This class stores the three essential features of a completed 
 	college course: the course number, the grade received, and the 
@@ -16,12 +17,14 @@ class course{
     public:
 	course();
 	// Input and output functions
+	/**Input and output functions, @return void these functions both return nothing**/
 	void input(std::istream& ins);
 	void output(std::ostream& outs)const;
 	// accessor functions
 	std::string get_course_number()const{
 	    return course_number;
 	}
+	/**@param this function has no parameters**/
 	std::string get_grade()const{
 	    return grade;
 	}

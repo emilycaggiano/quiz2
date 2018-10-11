@@ -1,3 +1,4 @@
+/**@file the name of this file is college.cc**/
 //********************
 //Matthew Aberegg
 //Project 3
@@ -11,12 +12,13 @@
 #include<string>
 using namespace std;
 
+/**This function sets the name variable equal to s, and the head pointer equal to NULL, @param s is a string input by the user**/
 College::College(std::string s){
 	name = s;
 	head = NULL;
 }
 
-
+/**This function moves the head pointer forward by one, @param there are no parameters for this function**/
 College::~College(){
 	node * rmptr;
 	while(head != NULL){

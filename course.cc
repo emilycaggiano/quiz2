@@ -1,3 +1,4 @@
+/**@file the name of this file is course.cc**/
 /***********************************************************************
 	The implementation file for course.h, which describes a college
 	course.
@@ -14,8 +15,9 @@ course::course(){
     hours = 0.0;
 }
 
+/**This file allows the user to input a course, @param ins is a file connected to the studnet's name listing all previously entered courses**/
 void course::input(std::istream& ins){
-    if(ins == cin){
+    if(&ins == &cin){
 	cout<<"Course Number: ";
 	if(ins.peek() == '\n') ins.ignore();
     	getline(ins, course_number);
@@ -38,9 +40,9 @@ void course::input(std::istream& ins){
     	ins>>hours;
     }
 }
-
+/**This function outputs the current course list that goes with the user's name, @param outs is a file that the information is written to **/
 void course::output(std::ostream& outs)const{
-    if(outs == cout){
+    if(&outs == &cout){
 	outs<<"Course Number:"<<course_number<<endl;
 	outs<<"Grade received:"<<grade<<endl;
 	outs<<"Credit hours:"<<setprecision(2)<<hours<<endl;
